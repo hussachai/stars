@@ -1,0 +1,19 @@
+
+*.class
+
+# Package Files #
+
+*.jar
+*.war
+*.ear
+*.zip
+
+.svn/
+.settings/
+target/
+.classpath
+.project
+.springBeans
+install.bat
+
+

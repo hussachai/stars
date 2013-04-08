@@ -1,0 +1,12 @@
+Stars Taglib
+- service (inject spring/ejb/stars service to web attribute using name or type)
+can be use with all service provider
+for example:
+	<stars:service id="personManager" name="personManager" scope="request"/>
+	<stars:service id="personManager" type="com.foo.bar.PersonManager" scope="application"/>
+If id is ommited, the name attribute value will be used instead.
+If id and name are ommited, exception will be thrown
+
+- lookup (lookup JNDI resource to web attribute using jndi name)
+	<stars:lookup id="dataSource" jndi="java:/dataSource" scope="session"/>
+	
